@@ -88,7 +88,7 @@ contract Teepee {
         FoundersTokensPercent   = ratioOfTarget * TargetFoundersTokenPercent / M;
 
         // Recalculate the percentage of company ownership the investors now hold
-        InvestorsTokenPercent   = M * 100 - FoundersTokensPercent
+        InvestorsTokenPercent   = M * 100 - FoundersTokensPercent;
 
         // Recalculate the total number of tokens in circulation after current dilution
         LastTokensCount         = M * InvestorsTokensCount * 100 / InvestorsTokenPercent;
